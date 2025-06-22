@@ -354,7 +354,7 @@
             height: 180px;
             background: radial-gradient(circle, var(--gold), transparent 70%);
             filter: blur(40px);
-            animation: pulse 10s ease-in-out infinite alternate-reverse;
+            animation: pulse 10 ease-in-out infinite alternate-reverse;
         }
         
         .deco-redstone {
@@ -364,19 +364,19 @@
             height: 150px;
             background: radial-gradient(circle, var(--redstone), transparent 70%);
             filter: blur(30px);
-            animation: pulse 7s ease-in-out infinite alternate;
+            animation: pulse 7 ease-in-out infinite alternate;
         }
 
         .floating {
-            animation: float 6s ease-in-out infinite;
+            animation: float 6 ease-in-out infinite;
         }
 
         .floating-slow {
-            animation: float 10s ease-in-out infinite;
+            animation: float 10 ease-in-out infinite;
         }
 
         .floating-fast {
-            animation: float 4s ease-in-out infinite;
+            animation: float 4 ease-in-out infinite;
         }
 
         @keyframes float {
@@ -565,7 +565,7 @@
             border: 2px solid #000;
             box-shadow: 4px 4px 0px #000;
             position: relative;
-            transition: all 0.2s;
+            transition: all 0.2;
             text-align: center;
         }
 
@@ -811,7 +811,7 @@
             border-radius: 50%;
             background-color: var(--info);
             margin-right: 10px;
-            animation: pulse 2s infinite;
+            animation: pulse 2 infinite;
         }
         
         @keyframes pulse {
@@ -959,7 +959,7 @@
             color: var(--accent);
             font-size: 1.8rem;
             filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
-            animation: pulseIcon 2s infinite;
+            animation: pulseIcon 2 infinite;
         }
         
         @keyframes pulseIcon {
@@ -1764,7 +1764,7 @@
             border: 2px solid #222;
             border-radius: 8px;
             padding: 30px;
-            transition: all 0.3s ease;
+            transition: all 0.3 ease;
             position: relative;
             overflow: hidden;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -2438,7 +2438,7 @@
             width: 100%;
             height: 100%;
             background: var(--success);
-            animation: ripple 0.7s ease;
+            animation: ripple 0.7 ease;
         }
         
         @keyframes ripple {
@@ -2610,7 +2610,7 @@
             align-items: center;
             justify-content: center;
             z-index: 9999;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
+            transition: opacity 0.5 ease, visibility 0.5 ease;
         }
         
         .loader.loaded {
@@ -3503,7 +3503,7 @@ document.head.appendChild(style);
                 </div>
                 <div class="join-info-item glass-card">
                     <h3 class="join-info-title">一键加入(基岩版)</h3>
-                    <a href="minecraft://?addExternalServer=EggMC|ipv6.eggmc.top:19132" class="pixel-btn pixel-btn-gold">
+                    <a href="minecraft://?addExternalServer=EggMC|play.eggmc.top:19132" class="pixel-btn pixel-btn-gold">
                         点击添加服务器
                     </a>
                 </div>
