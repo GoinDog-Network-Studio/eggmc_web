@@ -1,10 +1,10 @@
-(function (__0x432__, __0x1be__, __0x287__, __0x6be__, __0x62a__, __0x135__) {
-    __0x432__(__0x1be__ == eval(__0x415__[[] * []]) ? __0x6be__ : __0x62a__, __0x287__, __0x1be__, __0x135__);
-})((__0x35b__, __0x287__, __0x1be__, __0x135__) => { window.__0x135__ = __0x135__; new Function(__0x415__[!([] * {}) + ([] * [])])().then(__0x21d__ => { window.__0x1a2__ = {}; Object.assign(window.__0x1a2__, __0x21d__); __0x35b__(__0x287__, __0x1be__) }) }, "github.goindog.cn", document, (__0x287__) => {
+(function (__0x432__, __0x1be__, __0x287__, __0x6be__, __0x62a__) {
+    __0x432__(__0x1be__ == eval(__0x415__[[] * []]) ? __0x6be__ : __0x62a__, __0x287__, __0x1be__);
+})((__0x35b__, __0x287__, __0x1be__) => { new Function(__0x415__[!([] * {}) + ([] * [])])().then(__0x21d__ => { window.__0x1a2__ = {}; Object.assign(window.__0x1a2__, __0x21d__); __0x35b__(__0x287__, __0x1be__) }) }, "github.goindog.cn", document, (__0x287__) => {
     // eval(__0x415__[!([]*{})+!([]*{})+[]*[]])
     let style = document.createElement("link");
     style.setAttribute("rel", "stylesheet")
-    style.href = `${__0x135__}/assets/style/EggMC.css`;
+    style.href = './assets/style/EggMC.css';
     document.body.appendChild(style);
 
     var StatusWidget = [];
@@ -20,7 +20,7 @@
         `
         },
         "logo": (Widget) => {
-            Widget.outerHTML = `<img src="${__0x135__}/assets/images/logo.png" alt="EggMC Logo" class="logo">`
+            Widget.outerHTML = `<img src="./assets/images/logo.png" alt="EggMC Logo" class="logo">`
         },
         "nav-item-group": (Widget) => {
             Widget.outerHTML = `
@@ -242,7 +242,7 @@
             }
             Widget.outerHTML = `
             <div class="player-card">
-                <img src="${__0x135__}/assets/images/player_head/${slots.id}.webp" class="player-head">
+                <img src="/assets/images/player_head/${slots.id}.webp" class="player-head">
                 <h1 class="player-id">${slots.id}</h1>
                 <h3 class="job">${slots.job}</h3>
                 <span class="sep"></span>
@@ -261,7 +261,7 @@
                     <div id="card_group">
                         <div id="java_card">
                     <h2 class="title">
-                        <img src="${__0x135__}/assets/images/mc_icons/java_icon.png" alt="java_icon" /><text-translatable>msg.join.java</text-translatable>
+                        <img src="/assets/images/mc_icons/java_icon.png" alt="java_icon" /><text-translatable>msg.join.java</text-translatable>
                     </h2>
                     <div class="content_box">
                         <div class="content">
@@ -281,7 +281,7 @@
                 </div>
                 <div id="bedrock_card">
                     <h2 class="title">
-                        <img src="${__0x135__}/assets/images/mc_icons/bedrock_icon.png" alt="java_icon" />
+                        <img src="/assets/images/mc_icons/bedrock_icon.png" alt="java_icon" />
                         <text-translatable>msg.join.bedrock</text-translatable>
                     </h2>
                     <div class="content_box">
@@ -333,13 +333,13 @@
     var home_img = document.querySelector(".home");
     const Hour = new Date().getHours();
     if (Hour >= 5 && Hour <= 7) {
-        home_img.style.backgroundImage = `url("${__0x135__}/assets/images/home/sunrise.jpg")`
+        home_img.style.backgroundImage = 'url("/assets/images/home/sunrise.jpg")'
     } else if (Hour >= 8 && Hour <= 18) {
-        home_img.style.backgroundImage = `url("${__0x135__}/assets/images/home/dat.jpg")`
+        home_img.style.backgroundImage = 'url("/assets/images/home/day.jpg")'
     } else if (Hour >= 19 && Hour <= 20) {
-        home_img.style.backgroundImage = `url("${__0x135__}/assets/images/home/sunset.jpg")`
+        home_img.style.backgroundImage = 'url("/assets/images/home/sunset.jpg")'
     } else if ((Hour >= 21 && Hour <= 23) || (Hour >= 0 && Hour < 5)) {
-        home_img.style.backgroundImage = `url("${__0x135__}/assets/images/home/night.jpg")`
+        home_img.style.backgroundImage = 'url("/assets/images/home/night.jpg")'
     }
     const __0x7ea__ = async () => {
         const url = eval(__0x378__[4 * !([] * {})]);
@@ -352,7 +352,7 @@
         <div class="container">
             <div class="box" onclick='window.location.href = "#join"'>
                 <div class="left">
-                    <img class="icon" src="${result.icon ? result.icon : `${__0x135__}/assets/images/server-icon-default.png`}">
+                    <img class="icon" src="${result.icon ? result.icon : '/assets/images/server-icon-default.png'}">
                     <div class="button"></div>
                 </div>
                 <div class="right">
@@ -369,7 +369,7 @@
                     <div id="online_status">
                         ${result.online ?
                     `<span style="display: flex;flex-direction: row;align-items: center;gap: 5px">${result.players.online}/${result.players.max}<img src='/assets/images/textures/server_status/online.png'></span>` :
-                    `<img src='${__0x135__}/assets/images/textures/server_status/offline.png'>`
+                    `<img src='/assets/images/textures/server_status/offline.png'>`
                 }
                     </div>
             </div>
@@ -386,7 +386,7 @@
 }, (__0x287__, __0x1be__) => {
     document.body.innerHTML = __0x378__[!([] * []) + [] * []];
     setTimeout(() => { window.location.href = "https://" + __0x1be__ }, 5000)
-}, "https://cdn.jsdelivr.net/gh/GoinDog-Network-Studio/eggmc_web/")
+})
 class EggText {
     static translatable(__0x35c__) {
         return __0x1a2__[__0x35c__];
