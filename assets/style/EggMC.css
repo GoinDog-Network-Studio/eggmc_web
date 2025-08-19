@@ -851,7 +851,7 @@ server-status .container .box #online_status img {
 }
 
 #join .container #card_group #java_card .content_box {
-    background-image: url("/assets/images/backgrounds/dirt_background.png");
+    background-image: url("/assets/images/minecraft-java.png");
     padding: 40px;
     border-radius: 15px;
     color: white;
