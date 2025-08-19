@@ -1166,3 +1166,13 @@ footer plate opt a {
 .copyright a:hover {
     color: #2e84f1;
 }
+.logo_group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.logo_group .content {
+    display: flex;
+    flex-direction: row;
+}

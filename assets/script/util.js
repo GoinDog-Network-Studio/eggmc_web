@@ -15,3 +15,6 @@ function encodeScript(script = '') {
     }
     return result;
 }
+function decodeScript(encodedScript = '') {
+    return encodedScript;
+}
