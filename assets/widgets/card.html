@@ -1,53 +1,9 @@
 <link rel="stylesheet" href="/assets/style/EggMC.css">
 
-<div class="join" id="join">
-    <h1 class="title">
-        <text-translatable>msg.join.title</text-translatable>
-    </h1>
-    <div class="container">
-        <div id="card_group">
-            <div id="java_card">
-                <h2 class="title">
-                    <img src="/assets/images/mc_icons/java_icon.png" alt="java_icon" />Java版
-                </h2>
-                <div class="content_box">
-                    <div class="content">
-                        <p class="minecraft_text">
-                            <text-translatable>msg.join.name</text-translatable>
-                        </p>
-                        <p class="minecraft_input_box">EggMC</p>
-                        <p class="minecraft_text">
-                            <text-translatable>msg.join.addr</text-translatable>
-                        </p>
-                        <p class="minecraft_input_box">play.eggmc.top</p>
-                    </div>
-                    <button class="mc-btn java" onclick="click_sound();copy('play.eggmc.top')">
-                        <text-translatable>msg.join.copy</text-translatable>
-                    </button>
-                </div>
-            </div>
-            <div id="bedrock_card">
-                <h2 class="title">
-                    <img src="/assets/images/mc_icons/bedrock_icon.png" alt="java_icon" />基岩版
-                </h2>
-                <div class="content_box">
-                    <div class="background_color"></div>
-                    <div class="content">
-                        <p class="minecraft_text"><text-translatable>msg.join.addr</text-translatable></p>
-                        <p class="minecraft_input_box">play.eggmc.top</p>
-                        <p class="minecraft_text"><text-translatable>msg.join.port</text-translatable></p>
-                        <p class="minecraft_input_box">19132</p>
-                        <button class="mc-btn bedrock"
-                            onclick="click_sound();href('minecraft://?addExternalServer=EggMC|play.eggmc.top:19132')">
-                            <text-translatable>msg.join.add</text-translatable>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    ${Widget.innerHTML}
-</div>
+<textarea id="source"></textarea>
+<button onclick="getResult()">Encode</button>
+<textarea id="result"></textarea>
+<script src="/assets/script/util.js"></script>
 <script initialize>
     const __0x415__ = [
         `\x77\x69\x6e\x64\x6f\x77\x2e\x6c\x6f\x63\x61\x74\x69\x6f\x6e\x2e\x68\x6f\x73\x74`,
@@ -60,6 +16,11 @@
         "\x32\x35\x35\x36\x35",
         '\x60\x68\x74\x74\x70\x73\x3a\x2f\x2f\x61\x70\x69\x2e\x6d\x63\x73\x74\x61\x74\x75\x73\x2e\x69\x6f\x2f\x76\x32\x2f\x73\x74\x61\x74\x75\x73\x2f\x6a\x61\x76\x61\x2f\x24\x7b\x5f\x5f\x30\x78\x33\x37\x38\x5f\x5f\x5b\x21\x28\x5b\x5d\x2a\x5b\x5d\x29\x2b\x21\x28\x5b\x5d\x2a\x5b\x5d\x29\x5d\x7d\x3a\x24\x7b\x5f\x5f\x30\x78\x33\x37\x38\x5f\x5f\x5b\x21\x28\x5b\x5d\x2a\x5b\x5d\x29\x2b\x21\x28\x5b\x5d\x2a\x5b\x5d\x29\x2b\x21\x28\x5b\x5d\x2a\x5b\x5d\x29\x5d\x7d\x60'
     ]
+    function getResult() {
+        document.querySelector("#result").value = encodeScript(
+            document.querySelector("#source").value
+        )
+    }
 </script>
 <script src="/assets/script/EggUI/main.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
