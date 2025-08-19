@@ -7,7 +7,6 @@
     font-family: "Mojangles";
     src: url("/assets/fonts/mojangles.otf");
 }
-
 @media (max-width: 426px) {
     .home .container {
         font-size: .8rem;
